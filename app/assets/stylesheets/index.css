@@ -52,7 +52,7 @@ body {
     padding: .5em 0em 20% 0em;
     color: whitesmoke;
     text-align: center;
-    margin-top: 10%;
+    margin: 10% -1% 01% -1%;
     margin-bottom: 0%;
 }
 
@@ -100,4 +100,5 @@ body {
     background-color: #494949;
     padding: .1%;
     padding-right: 2%;
+    margin: 0% -1% -1% -1%;
 }
