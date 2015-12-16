@@ -1,7 +1,6 @@
 <head>
-  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <title>Cabal</title>
 </head>
-
 <body>
   <div class="main-selection">
     <a name="nav-bar">
@@ -9,16 +8,54 @@
     <div class="header">
       <h1>Cabal</h1>
       <ul>
-        <li><a href="#login">Login</a></li>
+        <li><a href="#" class="signup">Signup</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#nav-bar">Home</a></li>
       </ul>
     </div>
 
     <div class="top-content">
-      <span><a href="#">Log in</a></span>
-      <span><a href="#">Create Network</a></span>
+      <span class="login"><a href="#">Log in</a></span>
+      <span class="create"><a href="#">Create Network</a></span>
     </div>
+
+    <div class='loginbox'>
+      <h3>Login</h3>
+      <form name='login'>
+        <label for='username'>Username:</label>
+        <p><input type='text' name='username'></p>
+        <label for='password'>Password:</label>
+        <p><input type='password' name='password'></p>
+        <div class='submit'><a href='#'>Submit</a></div>
+      </form>
+    </div>
+
+    <% if session[:id] %>
+      <div class='createbox'>
+      <h3>Create a Group</h3>
+        <form name='create'>
+          <label for='name'>Group Name:</label>
+          <p><input type='text' name='name'></p>
+          <div class='submit'><a href='#'>Submit</a></div>
+        </form>
+      </div>
+    <% else %>
+      <div class='createbox'>
+        <h3>Sign Up</h3>
+        <form name='signup'>
+          <p><input type='text' name='fname' placeholder='First Name'></p>
+          <p><input type='text' name='lname' placeholder='Last Name'></p>
+          <p><input type='text' name='username' placeholder='Username'></p>
+          <p><input type='email' name='email' placeholder='Email'></p>
+          <p><input type='password' name='password' placeholder='Password'></p>
+
+          <div class='submit'><a href='#'>Submit</a></div>
+
+        </form>
+      </div>
+    <% end %>
+
+
   </div>
 
   <div class="about">
@@ -27,23 +64,11 @@
     <p>This is a description of the purpose behind creating your own personal social network. It will explain that this site doesn't track personal data to sell to ads and shit.</p>
 
   </div>
+
+  <div class="footer">
+    <a name="footer">
+
+    <p>Cabal &copy; 2015</p>
+
+  </div>
 </body>
-
-
-
-
-<!--
-<div class="container">
-  <%if current_user  %>
-    <h1>Logged in as <%=@current_user.username %></h1>
-    <a href='/users/<%=current_user.id%>/edit'>Edit User</a>
-    <form action='/sessions/<%=current_user.id%>' method='POST'>
-    	<input type='hidden' name='_method' value='DELETE'>
-    	<input type='submit' value='Log Out'>
-    </form>
-  <%else  %>
-  <a href='/users/new'>Create User</a>
-  <a href='/sessions/new'>Log In</a>
-  <%end %>
-</div>
- -->
