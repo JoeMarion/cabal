@@ -49,10 +49,10 @@ body {
 
 .about {
     background-color: #202036;
-    padding: .5em 0em 20% 0em;
+    padding: .5em 0em 25% 0em;
     color: whitesmoke;
     text-align: center;
-    margin-top: 10%;
+    margin: 10% -1% 01% -1%;
     margin-bottom: 0%;
 }
 
@@ -98,11 +98,24 @@ body {
     color: whitesmoke;
     text-align: right;
     background-color: #494949;
-    padding: .1%;
-    padding-right: 2%;
+    clear: both;
+    position: relative;
+    width: 103%;
+    text-align: center;
+    height: 3em;
+    margin-left: -0.6%;
 }
 
 .footer a {
     text-decoration: none;
     color: inherit;
+}
+
+.footer p {
+    padding-top: 0.5%;
+    margin: 0;
+}
+
+#last {
+    clear:both;
 }
