@@ -1,0 +1,121 @@
+body {
+    background-image: url('/imgs/headerphoto.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    margin: 2em 0em 0em 3em;
+    color: whitesmoke;
+}
+
+.header ul {
+    margin: -1em 0em 0em 0em;
+}
+
+.header ul li {
+    display: inline;
+    list-style-type: none;
+    float: right;
+    margin: -1em 8em 0em -5em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header ul a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-content {
+    margin: 3% 0% 10% 55%;
+    padding: 6em 0em 0em 0em;
+}
+
+.top-content span {
+    border-radius: 25px;
+    background-color: #202036;
+    margin: 0em 20em 0em -14em;
+    padding: 0.4em 1.1em 0.4em 1em;
+    border: none;
+    color: whitesmoke;
+}
+
+.top-content span a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.about {
+    background-color: #202036;
+    padding: .5em 0em 25% 0em;
+    color: whitesmoke;
+    text-align: center;
+    margin: 10% -1% 01% -1%;
+    margin-bottom: 0%;
+}
+
+.loginbox {
+    padding: 2em 0em 4em 0em;
+    background-color: #494949;
+    text-align: center;
+    width: 27%;
+    margin: -7% 0% 0% 37.25%;
+    border-radius: 5px;
+    color: whitesmoke;
+
+}
+
+.createbox {
+    padding: 2em 0em 2em 0em;
+    background-color: #494949;
+    text-align: center;
+    width: 27%;
+    margin: -7% 0% 0% 37.25%;
+    border-radius: 5px;
+    color: whitesmoke;
+
+}
+
+
+.submit {
+    background-color: #202036;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 1em;
+    color: whitesmoke;
+    padding: .4em 0em .3em 0em;
+    width: 50%;
+}
+
+.submit a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer {
+    color: whitesmoke;
+    text-align: right;
+    background-color: #494949;
+    clear: both;
+    position: relative;
+    width: 103%;
+    text-align: center;
+    height: 3em;
+    margin-left: -0.6%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer p {
+    padding-top: 0.5%;
+    margin: 0;
+}
+
+#last {
+    clear:both;
+}

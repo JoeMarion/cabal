@@ -1,0 +1,57 @@
+body {
+  background: url('/imgs/network-index.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.logo {
+  margin: 2% 0% 11% 82%;
+}
+
+.profile-info img {
+    border-radius: 25px;
+    padding: 1%;
+    height: 9em;
+    width: 10em;
+    margin: -8% 0% 0% 4%;
+    float: left;
+    background-color: blue;
+    border: none;
+}
+
+.profile-info {
+    display: inline;
+}
+
+.profile-info h1 {
+    margin: 11% 0% 0% 0%;
+    padding: 2% 0% 4% 21%;
+}
+
+.announcements {
+    background: gray;
+    padding: 0.1%;
+    margin: 0% 30% 0% 4%;
+    border-radius: 25px;
+    line-height: 1.5em;
+}
+
+.announcements li {
+    list-style-type: none;
+}
+.announcements a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.messenger {
+    background: gray;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    width: 18%;
+    right: 0;
+}
